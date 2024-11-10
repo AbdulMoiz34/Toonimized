@@ -433,7 +433,7 @@ img.ellipse {
 
 /* worksBox styling */
 .worksBox {
-    height: 50vw;
+    height: 95vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -443,9 +443,18 @@ img.ellipse {
 .necklace {
     width: 55%;
     position: absolute;
+    z-index: -1;
+}
+
+.necklace1 {
     left: 22%;
     top: 0;
-    z-index: -1;
+}
+
+.necklace2 {
+    left: 22%;
+    top: 87%;
+    transform: rotate(180deg);
 }
 
 .worksBoxHead {
@@ -478,11 +487,11 @@ img.ellipse {
 .worksBox .centerCircle {
     width: 17vw;
     height: 17vw;
-    border-radius: 100rem;
+    border-radius: 50%;
     background: linear-gradient(228.48deg, #f2ec3b 20.3%, #80f9c0 96.91%);
     box-shadow: inset -10px -10px 40px hsla(0, 0%, 100%, .45), inset 8px 8px 25px rgba(0, 0, 0, .35);
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 26%;
 }
 
 .rectangle {
@@ -569,11 +578,59 @@ img.ellipse {
     top: 42.5vw;
     left: 58vw;
 }
+
 .ovalBox5 {
     position: absolute;
     left: 67vw;
     top: 21vw;
 }
+
+.behindTheScenes {
+    margin-top: 63vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+.halfCircle {
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 110vw;
+    left: -10%;
+    border-radius: 50%;
+    background: linear-gradient(228.48deg, #f2ec3b 20.3%, #80f9c0 96.91%);
+    box-shadow: inset -10px -10px 40px hsla(0, 0%, 100%, .45), inset 8px 8px 25px rgba(0, 0, 0, .35);
+}
+
+/* behind the scene */
+.behindScenes {
+    margin-top: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+.behindScenesHead {
+    font-size: 3.2vw;
+    font-weight: 800;
+}
+
+.behindScenesPara {
+    font-weight: 700;
+    text-align: center;
+}
+
+.worksBoxVideo {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    border: 1.5px solid #000;
+    margin-top: 1vw;
+}
+
 /* Animation */
 @keyframes myAnim {
     0% {
