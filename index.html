@@ -319,8 +319,8 @@
                     in
                     touch with our latest discounts and news. No worries, we hate spam too.</p>
                 <input type="email" placeholder="Add your email....">
-                <div style="align-self: flex-start;">
-                    <input type="checkbox" name="" id="agree">
+                <div style="width: 100%;font-weight: 600;">
+                    <input type="checkbox" name="" id="agree" style="accent-color: #46767a;">
                     <label for="agree">I accept the privacy policy.</label>
                 </div>
                 <div style="display: flex; flex-direction: column;">
@@ -330,33 +330,37 @@
             </div>
         </section>
         <footer>
-            <div>
-                <div>
-                    <h4 class="logo">TOONIMIZED</h4>
-                    <div>
-
+            <div class="footerBox">
+                <div class="footerBox1">
+                    <img class="logo"
+                        src="https://res.cloudinary.com/dapozvnbr/image/upload/v1600086643/Logo__nye4vn.png" alt="">
+                    <div class="socialRow">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
                     </div>
                 </div>
-                <div>
-                    <span>Home</span>
-                    <span>Customize Now!</span>
-                    <span>FAQ</span>
-                    <span>contact</span>
+                <div class="footerBox2">
+                    <p>Home</p>
+                    <p>Customize Now!</p>
+                    <p>FAQ</p>
+                    <p>Contact</p>
                 </div>
-                <div>
-                    <span>Let's keep in touch!</span>
-                    <p>Join our newslatter to stay upto date to latest discounts, <br> promotions and orders.</p>
-                    <div>
-                        <input type="email" placeholder="Enter your email address" />
-
+                <div class="footerBox3">
+                    <p class="footOption">Let's keep in touch!</p>
+                    <p class="footDetails">Join our newsletter to stay up to date to latest discounts, promotions and
+                        order.</p>
+                    <div class="inpBox">
+                        <input type="email" name="" id="">
+                        <i class="fa-solid fa-paper-plane"></i>
                     </div>
                 </div>
             </div>
-            <div>
-                <p>&copy;2024 Make me Yellow.All right reserved.</p>
-                <div></div>
-                <a href="">Terms of service</a>
-                <a href="">privacy Policy</a>
+            <div class="footerBottom">
+                <p>&copy; Make me yellow. All right reserved.</p>
+                <img src="data:image/png;base64,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"
+                    alt="" class="card">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
             </div>
         </footer>
     </main>
