@@ -13,6 +13,10 @@ body {
     font-family: sans-serif;
 }
 
+main {
+    position: relative;
+    overflow: hidden;
+}
 
 /* Header styling */
 header {
@@ -432,8 +436,7 @@ img.ellipse {
 /* End */
 
 /* worksBox styling */
-.worksBox {
-    height: 95vw;
+.worksBoxSection {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -452,8 +455,9 @@ img.ellipse {
 }
 
 .necklace2 {
-    left: 22%;
-    top: 87%;
+    width: 74%;
+    left: 13%;
+    top: 64%;
     transform: rotate(180deg);
 }
 
@@ -484,14 +488,14 @@ img.ellipse {
     margin-top: 1.6vw;
 }
 
-.worksBox .centerCircle {
+.centerCircle {
     width: 17vw;
     height: 17vw;
     border-radius: 50%;
     background: linear-gradient(228.48deg, #f2ec3b 20.3%, #80f9c0 96.91%);
     box-shadow: inset -10px -10px 40px hsla(0, 0%, 100%, .45), inset 8px 8px 25px rgba(0, 0, 0, .35);
     position: absolute;
-    top: 26%;
+    top: 18%;
 }
 
 .rectangle {
@@ -502,16 +506,16 @@ img.ellipse {
 }
 
 .catBread {
-    width: 10vw;
+    width: 12vw;
     position: absolute;
-    bottom: -8%;
+    bottom: -10%;
     left: -11%;
 }
 
 .cat {
     width: 10vw;
     position: absolute;
-    top: 12vw;
+    top: 12.2vw;
     left: 3.5vw;
 }
 
@@ -585,14 +589,6 @@ img.ellipse {
     top: 21vw;
 }
 
-.behindTheScenes {
-    margin-top: 63vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2vw;
-}
-
 .halfCircle {
     width: 20vw;
     height: 20vw;
@@ -604,13 +600,13 @@ img.ellipse {
     box-shadow: inset -10px -10px 40px hsla(0, 0%, 100%, .45), inset 8px 8px 25px rgba(0, 0, 0, .35);
 }
 
-/* behind the scene */
-.behindScenes {
-    margin-top: 40vw;
+/* behindTheScenes-section*/
+.behindTheScenes {
+    margin-top: 63vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2vw;
+    gap: 2vw;
 }
 
 .behindScenesHead {
@@ -629,8 +625,254 @@ img.ellipse {
     width: 50%;
     border: 1.5px solid #000;
     margin-top: 1vw;
+    margin-bottom: 15vw;
 }
 
+/* opinionsSection */
+.opinionsSection {
+    height: 77vw;
+    background-color: #1c1c1c;
+    position: relative;
+    color: #fff;
+}
+
+.smallCircle {
+    background: linear-gradient(228.48deg, #f2ec3b 20.3%, #80f9c0 96.91%);
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 11vw;
+    top: -3vw;
+}
+
+.bigBlackCircle {
+    width: 45vw;
+    height: 45vw;
+    background-color: #1c1c1c;
+    box-shadow: -10px -10px 30px rgba(78, 78, 78, .25), 15px 15px 30px rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    position: absolute;
+    top: -5vw;
+    right: -10vw;
+}
+
+.smallBlackCircle {
+    width: 15vw;
+    height: 15vw;
+    background-color: #1c1c1c;
+    box-shadow: -10px -10px 30px rgba(78, 78, 78, .25), 15px 15px 30px rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    top: 25.5vw;
+    left: 16vw;
+}
+
+.shirtImg {
+    position: absolute;
+    z-index: 0;
+    width: 30vw;
+    left: 2%;
+    top: 1%;
+    z-index: 1;
+}
+
+.mobileImg {
+    position: absolute;
+    width: 23vw;
+    top: 28vw;
+    left: 3.8vw;
+    z-index: 2;
+}
+
+.cardImg {
+    position: absolute;
+    width: 28vw;
+    top: 43vw;
+    z-index: 1;
+    left: 4vw;
+}
+
+.quotes {
+    position: absolute;
+    width: 30%;
+    left: 30vw;
+    top: 10vw;
+}
+
+.opinionsData {
+    width: 45vw;
+    position: absolute;
+    top: 12vw;
+    left: 40vw;
+    text-align: right;
+}
+
+.opinionsHead {
+    font-size: 5.5vw;
+    margin: 0 2vw 2vw 0;
+    font-weight: 800;
+}
+
+.opinionsSubData {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.opinionsSubData>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.opinionsSubDataHead {
+    font-size: 2.4vw;
+    font-weight: 700;
+}
+
+.opinionsSubDataInfo {
+    color: #8f8f8f;
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+.opinionsPara {
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+
+.opinionsData .imgBox {
+    display: flex;
+    justify-content: end;
+}
+
+.opinionsData .left-arrow {
+    width: 2vw;
+    left: 1vw;
+}
+
+.opinionsData .right-arrow {
+    width: 2vw;
+    right: -4vw;
+}
+
+.opinionsData .imgBox>img {
+    width: 20vw;
+}
+
+/* artistSection styling */
+.artistSection {
+    display: flex;
+    background: linear-gradient(228.48deg, #f2ec3b 20.3%, #80f9c0 96.91%);
+}
+
+.artistSection>div {
+    width: 50vw;
+}
+
+.artistCharacter>img {
+    width: 100%;
+}
+
+.artistDataBox {
+    padding: 5vw 0 0 5vw;
+
+}
+
+.artistHead {
+    font-size: 5.3vw;
+    font-weight: 800;
+    line-height: 5.2vw;
+}
+
+.artistSubHead {
+    font-size: 2.3vw;
+    font-weight: 600;
+    display: block;
+    margin-top: 2vw;
+}
+
+.artistPara {
+    margin-top: 1vw;
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+    font-weight: 700;
+}
+
+.primary-button {
+    padding: 1vw 2.5vw;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: .8vw;
+    background: linear-gradient(180deg, #9419df, #4b19da);
+    color: #fff;
+    font-size: 1vw;
+    border: none;
+    display: block;
+}
+
+.seeArtistBtn {
+    margin-top: 5vw;
+}
+
+/* discount-section styling */
+
+.discountSection {
+    position: relative;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.1vw;
+    padding: 7.5vw 0 7vw 0;
+}
+
+.discountData {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.necklace3 {
+    transform: rotate(180deg);
+    left: 19vw;
+    top: -10vw;
+    width: 60vw;
+}
+
+.discountHead {
+    font-size: 2.3vw;
+    font-weight: 800;
+}
+
+.characterpara {
+    font-weight: 700;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 2vw 1vw;
+    border-radius: .6vw;
+    border: none;
+    background: #EAEFF8;
+    margin: 2vw 0 2vw 0;
+    outline: none;
+    font-weight: 700;
+}
+
+.discountBtn {
+    margin-top: 3vw;
+}
+.helpTxt {
+    color: #9e9e9e;
+    font-weight: 800;
+}
 /* Animation */
 @keyframes myAnim {
     0% {
